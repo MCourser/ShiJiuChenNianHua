@@ -6,7 +6,7 @@ Vagrant.configure("2") do |config|
   config.vm.network "forwarded_port", guest: 3306, host: 3306
   
   config.vm.provider "virtualbox" do |vb|
-    vb.name = "ubuntu-4-base"
+    vb.name = "ubuntu-4-sjcnh"
 
     # Display the VirtualBox GUI when booting the machine
     vb.gui = false
@@ -19,6 +19,6 @@ Vagrant.configure("2") do |config|
     images: ["mysql:latest"]
 
   config.vm.provision "docker", run: "always" do |d|
-    d.run "mysql", image: "mysql:latest", args: "-p 3306:3306 -e MYSQL_ROOT_PASSWORD=123456 -e MYSQL_DATABASE=base"
+    d.run "mysql", image: "mysql:latest", args: "-p 3306:3306 -e MYSQL_ROOT_PASSWORD=123456 -e MYSQL_DATABASE=sjcnh"
   end
 end

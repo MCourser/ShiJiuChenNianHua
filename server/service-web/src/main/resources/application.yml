@@ -5,7 +5,7 @@ spring:
   application:  
     name: service-web
   datasource:
-    url: jdbc:mysql://localhost:3306/sqcnh?characterEncoding=utf8&useSSL=true
+    url: jdbc:mysql://localhost:3306/sjcnh?characterEncoding=utf8&useSSL=true
     username: root
     password: 123456
     driver-class-name: com.mysql.jdbc.Driver
