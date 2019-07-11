@@ -1,16 +1,15 @@
-.metadata
-RemoteSystemsTempFiles
-.recommenders
-*.log
-env/dev/.vagrant
+.DS_Store
 
-server/.project
-server/target
-server/.settings
+.mvn
 
-server/service-web/.project
-server/service-web/target
+.idea/
+.metadata/
+.recommenders/
 
-web/.idea
-web/e2e
-web/node_modules
+/RemoteSystemsTempFiles/
+
+/env/.vagrant
+
+/app
+
+/server/firewall-analyzer-cisco-asa/
